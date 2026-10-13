@@ -1,0 +1,333 @@
+
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212121;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* COMPLETE LAYOUT */
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+.login {
+    display: inline-block;
+    background-color: white;
+    color: #0e0e0e;
+    text-decoration: none;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* LEFT SIDEBAR */
+.sidebar {
+    width: 250px;
+    min-width: 250px;
+    background-color: #171717;
+    padding: 18px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* SIDEBAR HEADING */
+.side-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 8px 20px;
+}
+
+.side-top h2 {
+    font-size: 23px;
+}
+
+.icon-btn {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 21px;
+    padding: 5px;
+}
+
+/* SIDEBAR LINKS */
+.side-link {
+    display: block;
+    padding: 12px;
+    color: #eeeeee;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.side-link:hover,
+.chat-list a:hover {
+    background-color: #303030;
+}
+
+/* CHAT HISTORY */
+.section-title {
+    color: #888888;
+    font-size: 12px;
+    margin: 25px 10px 8px;
+}
+
+.chat-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.chat-list a {
+    color: #dddddd;
+    text-decoration: none;
+    padding: 11px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* SIDEBAR BOTTOM */
+.side-bottom {
+    margin-top: auto;
+    border-top: 1px solid #383838;
+    padding-top: 10px;
+}
+
+/* RIGHT CONTENT */
+.content {
+    flex: 1;
+    min-width: 0;
+    min-height: 100vh;
+    position: relative;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    border-bottom: 1px solid #383838;
+}
+
+/* LOGO AND BRAND */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand img {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.brand h2 {
+    font-size: 22px;
+}
+
+/* NAVBAR LINKS */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.nav-links a {
+    color: #dddddd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.login {
+    background-color: white;
+    color: #222222;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+}
+
+/* MAIN CHAT SECTION */
+.main {
+    width: 90%;
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.main h1 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.main p {
+    color: #aaaaaa;
+    margin-bottom: 35px;
+}
+
+/* MESSAGE BOX */
+.chat-box {
+    background-color: #303030;
+    border: 1px solid #505050;
+    border-radius: 25px;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chat-box input {
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.chat-box input::placeholder {
+    color: #aaaaaa;
+}
+
+/* MESSAGE BOX BUTTONS */
+.chat-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.plus {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 25px;
+}
+
+.send {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    font-size: 24px;
+}
+
+/* SUGGESTIONS */
+.options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.options button {
+    background-color: transparent;
+    border: 1px solid #505050;
+    color: #dddddd;
+    padding: 12px 16px;
+    border-radius: 25px;
+}
+
+.options button:hover {
+    background-color: #353535;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    color: #888888;
+    font-size: 12px;
+    padding: 15px;
+}
+
+/* SMALLER SCREENS */
+@media (max-width: 700px) {
+
+    .sidebar {
+        width: 190px;
+        min-width: 190px;
+    }
+
+    .nav {
+        padding: 12px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        display: none;
+    }
+
+    .brand img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .main h1 {
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .sidebar {
+        width: 150px;
+        min-width: 150px;
+        padding: 10px 6px;
+    }
+
+    .side-top h2 {
+        font-size: 18px;
+    }
+
+    .side-link,
+    .chat-list a {
+        font-size: 12px;
+        padding: 10px 6px;
+    }
+
+    .brand h2 {
+        font-size: 18px;
+    }
+
+    .login {
+        padding: 8px 10px;
+    }
+
+}

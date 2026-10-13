@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | My AI</title>
+   <style>
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #212121;
+    color: white;
+    min-height: 100vh;
+}
+
+.login-container {
+    width: 90%;
+    max-width: 450px;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.back {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back:hover {
+    color: white;
+}
+
+.login-card {
+    background-color: #292929;
+    border: 1px solid #444444;
+    border-radius: 18px;
+    padding: 35px;
+    margin-top: 35px;
+}
+
+.login-card h1 {
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #aaaaaa;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+input {
+    background-color: #1c1c1c;
+    color: white;
+    border: 1px solid #505050;
+    border-radius: 8px;
+    padding: 13px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #aaaaaa;
+}
+
+input::placeholder {
+    color: #888888;
+}
+
+form button {
+    background-color: white;
+    color: #222222;
+    border: none;
+    border-radius: 9px;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #dddddd;
+}
+
+.terms {
+    color: #888888;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.6;
+    margin-top: 22px;
+}
+
+.bottom-text {
+    color: #888888;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+@media (max-width: 450px) {
+    .login-card {
+        padding: 25px 20px;
+    }
+
+    .login-card h1 {
+        font-size: 23px;
+    }
+}
+
+   </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <a href="new ai.html" class="back">← Back to My AI</a>
+
+        <div class="login-card">
+
+            <h1>Welcome to My AI</h1>
+            <p class="subtitle">Create your account to get started.</p>
+
+            <form action="#" method="get">
+
+                <label for="username">Username</label>
+                <input type="text"
+                       id="username"
+                       name="username"
+                       placeholder="Enter your username"
+                       required>
+
+                <label for="email">Email Address</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter your email"
+                       required>
+
+                <label for="password">Password</label>
+                <input type="password"
+                       id="password"
+                       name="password"
+                       placeholder="Create a password"
+                       required
+                       minlength="8">
+
+                <button type="submit">Create Account →</button>
+
+            </form>
+
+            <p class="terms">
+                By continuing, you agree to our Terms and Privacy Policy.
+            </p>
+
+        </div>
+
+        <p class="bottom-text">Your ideas. Your AI. Your space.</p>
+
+    </div>
+
+</body>
+</html>
